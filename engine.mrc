@@ -279,8 +279,8 @@ alias regexDist {
 ; $reVal(/regex/)
 ; Validate the regex
 alias reVal {
-  var %input = $1-, %sre = /(*UTF8)^s([^\w\s\\])((?:\\.|(?!\\|\1).)*)\1((?:\\.|(?!\\|\1).)*)\1([^\|\^\(\)\[\{\.\+\*\?\\\$\#]*)\s*$/, $&
-    %mre1 = /(*UTF8)^m?([^\w\s\\])((?:\\.|(?!\\|\1).)*)\1([^\|\^\(\)\[\{\.\+\*\?\\\$\#]*)\s*$/, %ret = $iif($isid,returnex,echo -ti12a)
+  var %input = $1-, %sre = /(*UTF8)^s([^\w\s\\])((?:\\.|(?!\\|\1).)*)\1((?:\\.|(?!\\|\1).)*)\1([^\|\^\(\)\[\{\.\+\*\?\\\$\#\/]*)\s*$/, $&
+    %mre1 = /(*UTF8)^m?([^\w\s\\])((?:\\.|(?!\\|\1).)*)\1([^\|\^\(\)\[\{\.\+\*\?\\\$\#\/]*)\s*$/, %ret = $iif($isid,returnex,echo -ti12a)
   ;[gisSmoxXAU] switched to .
   var %sub123 = $false
   if ($regex(sre,%input,%sre) isnum 1-) {

@@ -1,7 +1,7 @@
 ; outermost brackets
 ; 2012-02-11
 
-regml: (a + b), 0 !== 1
+regml: (a + b), 0 > 1
 You're setting too many backrefs from 6(a + b). Only use capturing groups where necessary.
 
 regml: (a + b), 0 !== 1, 1 !== (a + b)
